@@ -1,5 +1,9 @@
--- Datenbank anlegen
+-- Datenbank anlegen für Testskripte 
+DROP DATABASE IF EXISTS kino;
 CREATE DATABASE kino;
+
+--für Produktivsysteme 
+CREATE DATABASE IF NOT EXISTS kino;
 
 CREATE TABLE kino.film;
 USE kino;
@@ -23,6 +27,7 @@ CREATE TABLE land(
     code CHAR(2) PRIMARY KEY,
     name VARCHAR(250)
 );
+
 SHOW WARNINGS;
 DROP TABLE film;
 SHOW TABLES;
