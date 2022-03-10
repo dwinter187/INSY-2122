@@ -28,6 +28,8 @@ CREATE TABLE land(
     name VARCHAR(250)
 );
 
+docker exec -it mysql-3c mysql -p
+
 SHOW WARNINGS;
 DROP TABLE film;
 SHOW TABLES;
